@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="welcome-header">Welcome to the HL acronym learning platform!</h1>
+
+  <div class="container">
+    <form>
+      <h2 class="makeWhite">Sign Up</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <!-- <p class="signup makeWhite"><a id="signup-btn" href="signup.html">Sign up</a></p>
+      <p class="continue makeWhite">Or <a id="continue-as-guest" href="#">continue as guest</a></p> -->
+
+
+      <p class="signup makeWhite"> <a id="continue-as-guest" href="#">Continue as guest</a> <a id="signup-btn" href="signin.html">Sign in</a></p>
+      <!-- <p class="continue makeWhite">Or <a id="continue-as-guest" href="#">continue as guest</a></p> -->
+
+
+      <button id="signUpButton" type="submit">Sign Up</button>
+
+    </form>
+  </div>
+
+  <script>
+
+const signInButton = document.getElementById("signup-btn");
+signInButton.addEventListener("click", () => {
+        console.log("Clicked sign in button")
+        window.location.href = "login.html.html"; 
+    })
+
+  </script>
+
+</body>
+</html>
